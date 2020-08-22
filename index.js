@@ -16,4 +16,4 @@ app.use("/", require("./routes/index"));
 const http = require("http");
 const server = http.createServer(app);
 
-server.listen(3001);
+server.listen(process.env.PORT || 5000);
